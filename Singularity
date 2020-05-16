@@ -33,7 +33,7 @@ From: ubuntu:16.04
 
     # install R bioconductor including DESeq2
     Rscript -e "install.packages('BiocManager', repos='https://cran.rstudio.com'); BiocManager::install('ggtree')"
-    Rscript -e "source ('https://bioconductor.org/biocLite.R'); biocLite(c('ape', 'pegas', 'adegenet', 'phangorn', 'sqldf', 'ggplot2', 'ggExtra', 'phytools', 'DESeq2','monocle', 'edgeR','ShortRead','rtracklayer','GenomicFeatures','Rsamtools','biomaRt','Repitools','QuasR'))"
+    Rscript -e "source ('https://bioconductor.org/biocLite.R'); biocLite(c('ape', 'pegas', 'adegenet', 'ChIPpeakAnno','phangorn', 'sqldf', 'ggplot2', 'ggExtra', 'phytools', 'DESeq2','monocle', 'edgeR','ShortRead','rtracklayer','GenomicFeatures','Rsamtools','biomaRt','Repitools','QuasR'))"
 
     # install fastp
     wget http://opengene.org/fastp/fastp -P /opt/bin/
